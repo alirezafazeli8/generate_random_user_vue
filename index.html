@@ -9,7 +9,21 @@
 		<title>Random User Generator</title>
 	</head>
 	<body>
+		<div id="app">
+			<img
+				:class="gender"
+				v-bind:src="picture"
+				:alt="`${firstName} ${lastName}`"
+			/>
+			<h1>{{firstName}} {{lastName}}</h1>
+			<p>{{emailAddress}}</p>
+			<button @click="getUser" :class="gender">Generate User</button>
+		</div>
+
 		<!-- vue cdn -->
 		<script src="https://unpkg.com/vue@3"></script>
+
+		<!-- own js file -->
+		<script src="./app.js"></script>
 	</body>
 </html>
