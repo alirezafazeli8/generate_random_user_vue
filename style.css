@@ -51,3 +51,7 @@ button {
 	border: palevioletred 5px solid !important;
 	background-color: palevioletred;
 }
+
+[v-cloak] {
+	display: none !important;
+}
